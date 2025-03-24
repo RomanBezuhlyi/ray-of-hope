@@ -1,0 +1,81 @@
+.auto-wrap {
+	width: 100%;
+	background-image: url(../img/auto.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 377px;
+	padding: 47px 0;
+	@media (max-width: 991px) {
+		background-position: center;
+	}
+	@media (max-width: 480px) {
+		background-image: none;
+	}
+}
+.auto {
+	max-width: 630px;
+	@media (max-width: 991px) {
+		max-width: 400px;
+	}
+	@media (max-width: 480px) {
+		max-width: 100%;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 28px;
+		margin-bottom: 23px;
+		@media (max-width: 991px) {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
+	&__text {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 23px;
+		letter-spacing: -0.2px;
+		margin-bottom: 40px;
+		@media (max-width: 991px) {
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: -0.16px;
+			margin-bottom: 25px;
+		}
+	}
+	&__img-mobile {
+		display: none;
+		@media (max-width: 480px) {
+			display: block;
+			margin-bottom: 25px;
+		}
+	}
+	&__btn {
+		@include flex(row, center, center);
+		gap: 15px;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: -0.2px;
+		width: 302px;
+		height: 60px;
+		border-radius: 10px;
+		background: $accent;
+		backdrop-filter: blur(2px);
+		@include transition;
+		@media (max-width: 480px) {
+			width: 100%;
+		}
+		svg {
+			fill: $black;
+			@include transition;
+		}
+		&:hover {
+			color: $white;
+			background: $black;
+			svg {
+				fill: $white;
+				transform: translateX(35px);
+			}
+		}
+	}
+}

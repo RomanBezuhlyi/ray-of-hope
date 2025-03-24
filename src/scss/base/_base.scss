@@ -1,0 +1,30 @@
+/* Базові стилі */
+
+/* Загальні налаштування */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100vh;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	background: $bg;
+	color: $text;
+	font-family: $font-text;
+	font-style: normal;
+}
+section {
+	margin-bottom: 100px !important;
+	@media (max-width: 991px) {
+		margin-bottom: 50px !important;
+	}
+}
+button {
+	cursor: pointer;
+}
