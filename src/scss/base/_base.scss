@@ -28,3 +28,29 @@ section {
 button {
 	cursor: pointer;
 }
+#scrollToTopBtn {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 50px;
+	height: 50px;
+	z-index: 1000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: $accent;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	transform: rotate(-90deg);
+	@media (max-width: 991px) {
+		right: 16px;
+		bottom: 16px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+#scrollToTopBtn.show {
+	display: flex;
+}

@@ -1,1 +1,104 @@
+.footer-wrap {
+	padding: 50px 0;
+	background: #1e1e1e;
+	@media (max-width: 991px) {
+		padding-top: 25px;
+	}
+}
+.footer {
+	&__top {
+		@include flex(row, space-between, center);
+		padding-bottom: 25px;
+		border-bottom: 1px solid #898989;
+		@media (max-width: 991px) {
+			@include flex(column, flex-start, flex-start);
+			padding-bottom: 50px;
+		}
+	}
 
+	&__nav {
+		@include flex(row, flex-start, center);
+		gap: 30px;
+		@media (max-width: 991px) {
+			@include flex(column, flex-start, flex-start);
+			margin-bottom: 50px;
+		}
+	}
+
+	&__nav-item {
+		color: $white;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		@include transition;
+	}
+
+	&__nav-item.logo {
+		margin-right: 20px;
+		@media (max-width: 991px) {
+			margin-right: 2px;
+		}
+	}
+
+	&__nav-item:hover {
+		color: $accent;
+	}
+
+	&__btn {
+		@include flex(row, center, center);
+		gap: 15px;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: -0.2px;
+		width: 302px;
+		height: 60px;
+		border-radius: 10px;
+		background: $accent;
+		backdrop-filter: blur(2px);
+		@include transition;
+		@media (max-width: 480px) {
+			width: 100%;
+		}
+		svg {
+			fill: $black;
+			@include transition;
+		}
+		&:hover {
+			color: $white;
+			background: $black;
+			svg {
+				fill: $white;
+				transform: translateX(35px);
+			}
+		}
+	}
+
+	&__bottom {
+		padding-top: 25px;
+		@include flex(row, flex-end, center);
+		@media (max-width: 991px) {
+			padding-top: 50px;
+			justify-content: flex-start;
+		}
+	}
+
+	&__list {
+		@include flex(row, flex-end, center);
+		gap: 8px;
+	}
+
+	&__list-item {
+		@include flex(row, center, center);
+		a {
+			@include flex(row, center, center);
+		}
+	}
+
+	&__descr {
+		margin-top: 50px;
+		color: $white;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 23px;
+	}
+}

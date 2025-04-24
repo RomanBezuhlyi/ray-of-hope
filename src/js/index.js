@@ -1,2 +1,5 @@
+import './modules/animation'
+import './modules/faq'
 import './modules/mobile-menu'
 import './modules/swiper'
+import './modules/to-top'

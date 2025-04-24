@@ -1,32 +1,17 @@
-// @media (min-width: 992px) {
-//   /* Стилі для скроллу в Chrome та Safari */
-//   ::-webkit-scrollbar {
-//     width: 8px;
-//     height: 8px;
-//   }
-//   ::-webkit-scrollbar-thumb {
-//     background-color: $text;
-//     border-radius: 6px;
-//     max-height: 350px;
-//   }
-//   ::-webkit-scrollbar-track {
-//     background-color: $violet;
-//   }
+/* Визначення стилів для скролбару */
+::-webkit-scrollbar {
+	width: 12px; /* Ширина вертикального скролбару */
+	height: 12px; /* Висота горизонтального скролбару */
+}
 
-//   /* Стилі для скроллу в Mozilla Firefox */
-//   /* Ширина і висота скроллбара */
-//   * {
-//     scrollbar-width: thin;
-//     scrollbar-color: $violet;
-//   }
+/* Стиль фону для скролбару */
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.8); /* Яскравий жовтий фон */
+	border-radius: 2px; /* Заокруглення країв */
+}
 
-//   /* Стилі для кільця вокруг пальця при торканні */
-//   *::-webkit-scrollbar-thumb:active {
-//     background-color: $text;
-//   }
-
-//   /* Стилі для фону скроллбара */
-//   *::-webkit-scrollbar-track {
-//     background-color: $violet;
-//   }
-// }
+/* Стиль самого скролбару */
+::-webkit-scrollbar-thumb {
+	background: $accent; /* Яскравий червоний колір для скролбару */
+	border-radius: 2px; /* Заокруглення країв */
+}
