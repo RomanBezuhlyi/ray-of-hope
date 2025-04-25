@@ -1,10 +1,5 @@
 .catalog {
 	position: relative;
-	&__wrap {
-	}
-
-	&__list {
-	}
 
 	&__item {
 		padding: 28px;
@@ -55,7 +50,7 @@
 }
 .swiperCatalog__nav {
 	position: absolute;
-	top: 90px;
+	top: 0;
 	right: 0;
 	@include flex(row, center, center);
 	gap: 35px;
