@@ -1,0 +1,19 @@
+.order-wrap {
+	padding-top: 130px;
+	@media (max-width: 991px) {
+		padding-top: 80px;
+	}
+}
+.order {
+	position: relative;
+	@include flex(column, center, center);
+	&__btn {
+		position: absolute;
+		left: 0;
+		top: 60px;
+		@media (max-width: 991px) {
+			position: static;
+			top: 0;
+		}
+	}
+}
